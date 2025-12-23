@@ -1,0 +1,6 @@
+@API_da_rifa_HostAddress = http://localhost:5151
+
+GET {{API_da_rifa_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

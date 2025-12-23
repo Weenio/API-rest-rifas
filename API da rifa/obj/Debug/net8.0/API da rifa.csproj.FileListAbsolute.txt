@@ -1,0 +1,37 @@
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\bin\Debug\net8.0\appsettings.json
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\bin\Debug\net8.0\API da rifa.exe
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\bin\Debug\net8.0\API da rifa.deps.json
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\bin\Debug\net8.0\API da rifa.runtimeconfig.json
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\bin\Debug\net8.0\API da rifa.dll
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\bin\Debug\net8.0\API da rifa.pdb
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\obj\Debug\net8.0\API da rifa.csproj.AssemblyReference.cache
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\obj\Debug\net8.0\API da rifa.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\obj\Debug\net8.0\API da rifa.AssemblyInfoInputs.cache
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\obj\Debug\net8.0\API da rifa.AssemblyInfo.cs
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\obj\Debug\net8.0\API da rifa.csproj.CoreCompileInputs.cache
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\obj\Debug\net8.0\API da rifa.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\obj\Debug\net8.0\API da rifa.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\obj\Debug\net8.0\staticwebassets\msbuild.API da rifa.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\obj\Debug\net8.0\staticwebassets\msbuild.build.API da rifa.props
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.API da rifa.props
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.API da rifa.props
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\obj\Debug\net8.0\scopedcss\bundle\API da rifa.styles.css
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\obj\Debug\net8.0\API da r.D9F9D123.Up2Date
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\obj\Debug\net8.0\API da rifa.dll
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\obj\Debug\net8.0\refint\API da rifa.dll
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\obj\Debug\net8.0\API da rifa.pdb
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\obj\Debug\net8.0\API da rifa.genruntimeconfig.cache
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\obj\Debug\net8.0\ref\API da rifa.dll
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\bin\Debug\net8.0\MySqlConnector.dll
+C:\Users\WeeneoDragon\source\repos\API da rifa\API da rifa\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
