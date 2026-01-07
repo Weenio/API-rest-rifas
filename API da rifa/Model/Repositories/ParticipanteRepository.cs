@@ -1,6 +1,7 @@
-﻿using API_da_rifa.Model;
+﻿using API_da_rifa.Infrastructure;
+using API_da_rifa.Model;
 
-namespace API_da_rifa.Infrastructure
+namespace API_da_rifa.Model.Repositories
 {
     public class ParticipanteRepository : IParticipanteRepository
     {
@@ -13,11 +14,16 @@ namespace API_da_rifa.Infrastructure
             _context.Participante.Add(participante);
             _context.SaveChanges();
         }
-        
+
         //Pesquisa e lista os participantes existentes
         public List<Participante> Get()
         {
             return _context.Participante.ToList();
+        }
+
+        public bool NumeroPossuido(int numero)
+        {
+            return _context.Participante.Any(p => p.NumeroComprado == numero);
         }
     }
 }

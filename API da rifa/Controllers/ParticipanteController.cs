@@ -1,6 +1,8 @@
 ﻿using API_da_rifa.Model;
 using API_da_rifa.DTOs;
 using Microsoft.AspNetCore.Mvc;
+using API_da_rifa.Model.Repositories;
+using API_da_rifa.Services;
 
 namespace API_da_rifa.Controllers
 {
@@ -8,11 +10,11 @@ namespace API_da_rifa.Controllers
     [Route("api/v1/participante")]
     public class ParticipanteController : ControllerBase
     {
-        private readonly IParticipanteRepository _participanteRepository;
+        private readonly ParticipanteService _service;
 
-        public ParticipanteController(IParticipanteRepository participanteRepository)
+        public ParticipanteController(ParticipanteService pService)
         {
-            _participanteRepository = participanteRepository;
+            _service = pService;
         }
 
         //Extrema atenção aqui: Os dados do JSON DEVEM ser formatados como no exemplo:
@@ -27,21 +29,14 @@ namespace API_da_rifa.Controllers
         [HttpPost]
         public IActionResult Add([FromBody] ParticipanteCreateDTO dto)
         {
-            var participante = new Participante(
-                dto.Nome,
-                dto.DataNascimento,
-                dto.NumeroTelefone,
-                dto.NumeroComprado
-                );
-
-            _participanteRepository.Add(participante);
-            return Ok();
+                var participante = _service.Create(dto);
+                return Ok(participante);
         }
 
         [HttpGet]
         public IActionResult Get()
         {
-            var participantes = _participanteRepository.Get();
+            var participantes = _service.GetAll();
 
             return Ok(participantes);
         }

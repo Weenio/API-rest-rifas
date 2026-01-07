@@ -1,5 +1,5 @@
-using API_da_rifa.Infrastructure;
-using API_da_rifa.Model;
+using API_da_rifa.Model.Repositories;
+using API_da_rifa.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +11,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddTransient<IParticipanteRepository, ParticipanteRepository>();
+builder.Services.AddTransient<ParticipanteService>();
+
+builder.Services.AddScoped<IParticipanteRepository, ParticipanteRepository>();
+builder.Services.AddScoped<ParticipanteService>();
 
 var app = builder.Build();
 
