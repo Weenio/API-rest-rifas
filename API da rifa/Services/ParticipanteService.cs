@@ -63,5 +63,32 @@ namespace API_da_rifa.Services
                 NumeroComprado = p.NumeroComprado
             });
         }
+
+        public Participante Update(int id,  ParticipanteUpdateDTO dto)
+        {
+            var participante = _repo.GetById(id);
+
+            if(participante == null)
+                throw new Exception("Participante não encontrado!");
+
+            if(dto.NumeroComprado.HasValue)
+            {
+                if (dto.NumeroComprado <= 0)
+                    throw new Exception("Número inválido");
+
+                if (participante.NumeroComprado != dto.NumeroComprado.Value &&
+                    _repo.NumeroPossuido(dto.NumeroComprado.Value))
+                    throw new Exception("Número já possuído");
+            }
+
+            participante.AtualizarDadosParcial(
+                dto.Nome,
+                dto.NumeroTelefone,
+                dto.NumeroComprado
+                );
+
+            _repo.Update(participante);
+            return participante;
+        }
     }
 }

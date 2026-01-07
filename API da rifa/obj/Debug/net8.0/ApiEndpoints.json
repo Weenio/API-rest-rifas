@@ -26,6 +26,27 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "API_da_rifa.Controllers.ParticipanteController",
+    "Method": "Update",
+    "RelativePath": "api/v1/participante/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "API_da_rifa.DTOs.ParticipanteUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API_da_rifa.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

@@ -40,5 +40,19 @@ namespace API_da_rifa.Controllers
 
             return Ok(participantes);
         }
+
+        [HttpPatch("{id}")]
+        public IActionResult Update(int id, [FromBody] ParticipanteUpdateDTO dto)
+        {
+            try
+            {
+                var participante = _service.Update(id, dto);
+                return Ok(participante);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

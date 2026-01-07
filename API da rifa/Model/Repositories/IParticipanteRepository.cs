@@ -7,5 +7,8 @@
         List<Participante> Get();
 
         bool NumeroPossuido(int numero);
+
+        Participante GetById(int id);
+        void Update(Participante participante);
     }
 }

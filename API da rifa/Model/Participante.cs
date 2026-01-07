@@ -28,5 +28,36 @@ namespace API_da_rifa.Model
             this.NumeroTelefone = NumeroTel;
             this.NumeroComprado = NumeroComprado;
         }
+
+        public void AtualizarDados( string Nome, string NumeroTel, int NumeroComprado)
+        {
+            //Regra 1: Nome é obrigatório
+            if (string.IsNullOrWhiteSpace(Nome))
+                throw new Exception("O Nome é obrigatório!");
+
+            //Regra 2: Número deve ser >= 0
+            if (NumeroComprado <= 0)
+                throw new Exception("O Número deve ser maior ou igual à zero!");
+
+            this.Nome = Nome;
+            this.NumeroTelefone = NumeroTel;            
+            this.NumeroComprado = NumeroComprado;
+
+        }
+
+        public void AtualizarDadosParcial(string? Nome, string? NumeroTel, int? NumeroComprado)
+        {
+            //Regra 1: Nome é obrigatório
+            if (Nome != null)
+                this.Nome = Nome;
+
+            //Regra 2: Número deve ser >= 0
+            if (NumeroTel != null)
+                this.NumeroTelefone = NumeroTel;
+
+            if(NumeroComprado.HasValue)
+                this.NumeroComprado = NumeroComprado.Value;
+
+        }
     }
 }
