@@ -14,6 +14,7 @@ namespace API_da_rifa.Services
         REGRA 1: O nome é uma variável OBRIGATÓRIA
         REGRA 2: O número comprado DEVE ser maior que (ou igual, em alguns casos) 0
         REGRA 3: O mesmo número NÃO PODE ser comprado duas vezes
+        REGRA 4: Usuários excluidos da participação recebem sempre um "Soft Delete"
 
         Mais regras serão escritas tanto na documentação quanto no código, assim que houverem
         novos updates.
@@ -89,6 +90,18 @@ namespace API_da_rifa.Services
 
             _repo.Update(participante);
             return participante;
+        }
+
+        public void Delete(int id)
+        {
+            var participante = _repo.GetById(id);
+
+            if (participante == null)
+                throw new Exception("Participante não encontrado...");
+
+            participante.CancelarParticipacao();
+
+            _repo.Update(participante);
         }
     }
 }

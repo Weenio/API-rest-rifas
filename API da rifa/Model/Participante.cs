@@ -8,14 +8,11 @@ namespace API_da_rifa.Model
         //Dados que vão vir da DataBase
         [Key]
         public int ID_participante { get; private set; }
-
         public string Nome { get; private set; }
-
         public DateTime DataNascimento {  get; private set; }
-
         public string NumeroTelefone { get; private set; }
-
         public int NumeroComprado { get; private set; }
+        public bool Participando { get; private set; } = true;
 
         //Construtor vazio para o EFCore
         public Participante() { }
@@ -58,6 +55,14 @@ namespace API_da_rifa.Model
             if(NumeroComprado.HasValue)
                 this.NumeroComprado = NumeroComprado.Value;
 
+        }
+
+        public void CancelarParticipacao()
+        {
+            if (!Participando)
+                throw new Exception("Participante já inativo...");
+
+            Participando = false;
         }
     }
 }

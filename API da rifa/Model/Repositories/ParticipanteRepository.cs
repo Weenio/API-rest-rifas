@@ -20,7 +20,7 @@ namespace API_da_rifa.Model.Repositories
         //Pesquisa e lista os participantes existentes, Read
         public List<Participante> Get()
         {
-            return _context.Participante.ToList();
+            return _context.Participante.Where(p => p.Participando).ToList();
         }
 
         //Pesquisa e lista os participantes com ID específicado, Read (específico)
@@ -29,7 +29,7 @@ namespace API_da_rifa.Model.Repositories
             return _context.Participante.FirstOrDefault(p => p.ID_participante == id);
         }
 
-        //Pede para atualizar um cadastro em específico, Update
+        //Pede para atualizar um cadastro em específico, Update e Delete
         public void Update(Participante participante)
         {
             _context.Participante.Update(participante);
